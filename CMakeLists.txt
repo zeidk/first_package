@@ -13,11 +13,11 @@ find_package(rclcpp REQUIRED)
 
 
 #----- Hello class: start -----
-add_executable(hello_cpp src/main.cpp)
-ament_target_dependencies(hello_cpp rclcpp)
+add_executable(hello src/main.cpp)
+ament_target_dependencies(hello rclcpp)
 
 install(TARGETS 
-hello_cpp
+hello
 DESTINATION lib/${PROJECT_NAME})
 #----- Hello class: end -----
 
